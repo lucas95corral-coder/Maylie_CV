@@ -1,0 +1,171 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Maylie Valerius — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>🌸 Maylie Valerius</h1>
+  <p class="subtitle"><em>Étudiante en Sciences de l’Éducation — Licence L2 (2025–2026)</em></p>
+  <button id="toggleTheme">🌙 Mode sombre</button>
+  <nav class="sommaire">
+    <span onclick="goToPage('cv')">1️⃣ CV</span> |
+    <span onclick="goToPage('londres')">2️⃣ Londres</span> |
+    <span onclick="goToPage('guyane')">3️⃣ Guyane</span> |
+    <span onclick="goToPage('lecture')">4️⃣ Carnet Lecture</span> |
+    <span onclick="goToPage('merci')">5️⃣ Remerciements</span>
+  </nav>
+</header>
+
+<main>
+
+  <!-- PAGE 1 — CV -->
+  <section class="page active" id="cv">
+    <h2>📄 Mon CV</h2>
+
+    <div class="card">
+      <h3>Profil</h3>
+      <p>Étudiante motivée, ponctuelle et polyvalente, sérieuse et investie, prête à apprendre et à m’impliquer dans diverses missions éducatives. Passionnée par le domaine de l’éducation et le travail avec les enfants, je cherche à développer mes compétences professionnelles tout en contribuant activement aux projets auxquels je participe.</p>
+    </div>
+
+    <div class="card">
+      <h3>Contact</h3>
+      <p>📞 07 49 15 73 73<br>
+         📧 maylievalerius@gmail.com<br>
+         📍 8 Mail Gay-Lussac, 95000 Neuville-sur-Oise</p>
+    </div>
+
+    <div class="card">
+      <h3>🎓 Formations</h3>
+      <ul>
+        <li>Licence Sciences de l’Éducation — ILEPS, Cergy (L2 — 2025–2026)</li>
+        <li>Bac STI2D — Lycée Léon Gontran Damas (2021–2022)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>💼 Expériences professionnelles</h3>
+      <ul>
+        <li>Stagiaire — Les Bourseaux, Saint-Ouen-l’Aumône (2025)</li>
+        <li>Garde d’enfants à domicile — Babychou Services (2023–2024)</li>
+        <li>Stage en crèche — Maurice Bellony (2023–2024)</li>
+        <li>Stage en entreprise — Tempere Construction (2022–2023)</li>
+        <li>Stage en école maternelle et primaire</li>
+        <li>Stage sur chantier — levée de réserves</li>
+        <li>Aide à l’accueil lors d’événements</li>
+        <li>Aide administrative — préparation de quittances de loyer</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🧠 Compétences</h3>
+      <ul>
+        <li>Logiciels bureautiques (Word, Excel)</li>
+        <li>Travail en équipe</li>
+        <li>Communication orale et écrite</li>
+        <li>Création d’activités éducatives et ludiques</li>
+        <li>Capacité d’adaptation</li>
+        <li>Patience, ponctualité, sens de l’écoute</li>
+        <li>Expérience avec des enfants de 1 à 12 ans</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Langues</h3>
+      <ul>
+        <li>Français — bilingue</li>
+        <li>Créole haïtien / guyanais — bilingue</li>
+        <li>Anglais — intermédiaire</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🎨 Centres d’intérêt</h3>
+      <ul>
+        <li>Arts créatifs</li>
+        <li>Voyages</li>
+        <li>Lecture</li>
+        <li>Dessin</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🚗 Permis</h3>
+      <p>Permis B</p>
+    </div>
+
+    <div class="buttons">
+      <button onclick="printCV()">📥 Télécharger mon CV</button>
+      <button onclick="nextPage('londres')">➡️ Suivant</button>
+    </div>
+  </section>
+
+  <!-- PAGE 2 — Voyage Londres -->
+  <section class="page" id="londres">
+    <h2>✈️ Projet : Voyage à Londres</h2>
+    <div class="card london">
+      <p>Depuis longtemps, j’ai le rêve de visiter <strong>Londres 🇬🇧</strong> pendant la période de <strong>Noël 🎄</strong> avec mon amie <strong>Noémie</strong>. J’imagine la ville illuminée, les marchés de Noël, les décorations, les vitrines féériques et l’ambiance festive qui rend cette période magique. Ce voyage représente pour moi une expérience culturelle et personnelle unique, une opportunité de découvrir l’histoire et les coutumes anglaises tout en partageant des moments inoubliables avec mon amie.</p>
+    </div>
+    <div class="buttons">
+      <button onclick="prevPage('cv')">⬅️ Retour</button>
+      <button onclick="nextPage('guyane')">➡️ Suivant</button>
+    </div>
+  </section>
+
+  <!-- PAGE 3 — Voyage Guyane -->
+  <section class="page" id="guyane">
+    <h2>🌍 Projet : Retour en Guyane</h2>
+    <div class="card guyane">
+      <p>Pendant les grandes vacances, je projette de retourner en <strong>Guyane 🇬🇾</strong> pour revoir ma famille et mon petit frère <strong>Richard</strong> âgé de 11 ans. Ce voyage représente pour moi un retour aux racines et une immersion dans un climat chaud et ensoleillé, très différent du froid français. Je suis impatiente de profiter du soleil, de la nature, et de passer du temps précieux avec ma famille. C’est une expérience qui enrichit ma vie et me fait découvrir une autre réalité.</p>
+    </div>
+    <div class="buttons">
+      <button onclick="prevPage('londres')">⬅️ Retour</button>
+      <button onclick="nextPage('lecture')">➡️ Suivant</button>
+    </div>
+  </section>
+
+  <!-- PAGE 4 — Carnet de lecture -->
+  <section class="page" id="lecture">
+    <h2>📖 Carnet de lecture : Voyage entre les pages</h2>
+
+    <!-- Livre 1 — La grenouille à grande bouche -->
+    <div class="card livre1">
+      <h3>🐸 La grenouille à grande bouche</h3>
+      <p>Auteur : Élodie Nouhen<br>
+         Illustrateur : Francine Vidal</p>
+      <p>Résumé : L’histoire d’une grenouille curieuse qui pose beaucoup de questions. J’ai fait le lien avec le Corbeau et le Renard de Jean de La Fontaine : les personnages parlent sans réfléchir. Les deux histoires montrent l’importance de réfléchir avant de parler ou de croire aux autres.</p>
+    </div>
+
+    <!-- Livre 2 — Un amour de tortue -->
+    <div class="card livre2">
+      <h3>🐢 Un amour de tortue</h3>
+      <p>Auteur : Roald Dahl<br>
+         Illustrateur : Quentin Blake</p>
+      <p>Résumé : J’ai illustré une tortue sur un puzzle dont les pièces sont éparpillées. Chaque pièce contient le titre, l’éditeur et la collection. Le projet permet de relier lecture et créativité tout en travaillant sur la symbolique et l’organisation.</p>
+    </div>
+
+    <div class="buttons">
+      <button onclick="prevPage('guyane')">⬅️ Retour</button>
+      <button onclick="nextPage('merci')">➡️ Suivant</button>
+    </div>
+  </section>
+
+  <!-- PAGE 5 — Remerciements -->
+  <section class="page" id="merci">
+    <h2>🎓 ILEPS</h2>
+    <div class="card merci">
+      <p>Merci d’avoir pris le temps de découvrir mon site et mon parcours.</p>
+    </div>
+    <div class="buttons">
+      <button onclick="prevPage('lecture')">⬅️ Retour</button>
+      <button onclick="goToPage('cv')">🔄 Retour au début</button>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
