@@ -1,0 +1,106 @@
+body {
+  font-family: "Times New Roman", serif;
+  margin: 0;
+  background: #fff0f6;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #1e1e1e;
+  color: #f2f2f2;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  background: #f8c1d9;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header .subtitle {
+  font-style: italic;
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+nav.sommaire {
+  margin-top: 10px;
+}
+
+nav.sommaire span {
+  cursor: pointer;
+  margin: 0 5px;
+  text-decoration: underline;
+  color: #800080;
+}
+
+nav.sommaire span:hover {
+  color: #d63384;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px 5px 0 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #d63384;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.page {
+  display: none;
+  padding: 30px;
+}
+
+.page.active {
+  display: block;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  line-height: 1.5em;
+}
+
+body.dark .card {
+  background: #2b2b2b;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.london {
+  background: #ffcccc;
+  color: #800000;
+}
+
+.guyane {
+  background: #ccffcc;
+  color: #006600;
+}
+
+.livre1 {
+  background: #e0f7e0;
+}
+
+.livre2 {
+  background: #d0f0d0;
+}
+
+.merci {
+  background: #cce0ff;
+}
